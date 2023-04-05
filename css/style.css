@@ -1,0 +1,291 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #1f1f38;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+h5 {
+    color: #ffffff99;
+}
+
+.btn {
+
+    border-radius: 0.4rem;
+    color: #fff;
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    transition: all .4s ease;
+
+}
+
+.download {
+    border: 1px solid #ffb72b;
+    background-color: #1f1f38;
+}
+
+.download:hover {
+    background-color: #fff;
+    color: #1f1f38;
+}
+
+.btn-primary {
+    background-color: #ffb72b;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #1f1f38;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(181deg, #ffb72b, #ffb72b, transparent);
+    border-top-left-radius: 219px;
+    border-top-right-radius: 219px;
+    margin-top: 1.7rem !important;
+}
+
+.aboutme h2,
+.aboutme h5 {
+    text-align: center;
+    margin-top: 34px;
+}
+
+.aboutme h2 {
+    color: #ffb72b;
+}
+
+.imgabout {
+
+    position: relative;
+    width: 300px;
+
+    height: 402px;
+    border-radius: 71px;
+    margin: auto;
+    background: linear-gradient(45deg, transparent, #ffb72b, transparent);
+    display: grid;
+
+}
+
+.imgabout img {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 402px;
+    border-radius: 71px;
+    margin: auto;
+    display: grid;
+    transform: rotate(23deg);
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+}
+
+.imgabout img:hover {
+    transform: rotate(0deg);
+}
+
+/* card content  */
+.card {
+    height: 134px;
+    justify-content: center;
+    width: 163px;
+    color: #000;
+    margin-top: 37px;
+    background-color: #ffb72b;
+    border-radius: 10px;
+}
+
+.card_content.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card_content a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 189px;
+    background-color: #ffb72b;
+    color: #fff;
+}
+
+/* experience section */
+
+.experience-sec .row {
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.experience-sec .bg {
+    background-color: #ffb72b;
+    border-radius: 30px;
+    width: 400px;
+    position: relative;
+    top: 16px;
+
+}
+
+.experience-sec article {
+    margin-top: 26px;
+}
+
+.list-group-item {
+    /* background-color: #ffb72b;
+    border:#ffb72b; */
+    /* opacity: .3; */
+    border: none;
+}
+
+.exper h2 {
+    color: #ffb72b;
+}
+
+
+/* @media only screen and (min-width: 400px) and( max-width: 600px){} */
+
+@media (min-width:567px) and (max-width: 768px) {
+    .img {
+        width: 452px;
+        height: 443px;
+        border-top-left-radius: 540px;
+        border-top-right-radius: 540px;
+    }
+
+    /* About me */
+    .card_content {
+        position: relative;
+    }
+
+    .card {
+        width: 33.333%;
+
+        margin-bottom: 20px;
+    }
+
+    .para {
+        position: absolute;
+        top: 179px;
+        text-align: center;
+    }
+
+    .card_content a {
+        position: absolute;
+        top: 110px;
+    }
+
+    /* experience section */
+    .exper {
+        margin-top: 286px;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .img {
+        width: 452px;
+        height: 443px;
+        border-top-left-radius: 540px;
+        border-top-right-radius: 540px;
+    }
+
+    /* About me */
+    .card_content {
+
+        margin-top: 10px;
+    }
+
+    .card_content a {
+        margin-top: 9px;
+    }
+
+    .card {
+        /* width: 33.333%; */
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .img {
+        width: 452px;
+        height: 443px;
+        border-top-left-radius: 540px;
+        border-top-right-radius: 540px;
+    }
+
+    /* About me */
+    .card_content {
+        position: relative;
+    }
+
+    .card {
+        width: 33.333%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .para {
+        position: absolute;
+        top: 179px;
+        text-align: center;
+    }
+
+    .card_content a {
+        position: absolute;
+        top: 110px;
+    }
+
+    /* experience section */
+    .exper {
+        margin-top: 286px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .card {
+        flex: 0 0 auto;
+        height: 100px;
+        width: 300px;
+        /* width: 25%; */
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 0 0 auto;
+        height: 100px;
+        /* width: 300px; */
+        width: 25%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .card {
+            flex: 0 0 auto;
+            height: 135px;
+            /* width: 300px; */
+            width: 30%;
+            margin-right: auto;
+            margin-left: auto;
+      
+    }
+    .card_content a {
+        margin-top: 215px;
+    }
+}
