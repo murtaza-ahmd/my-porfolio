@@ -123,6 +123,7 @@ h5 {
     color: #fff;
 }
 
+
 /* experience section */
 
 .experience-sec .row {
@@ -195,8 +196,8 @@ h2 {
     border-radius: 0 0 2rem 2rem;
     box-shadow: 0 2rem 1rem rgba(0,0,0,.1);
     padding: 2rem;
-    height: 100px;
-    width: 360px;
+    /* height: 100px;
+    width: 360px; */
     position: relative;
 }
 .services article:hover {
@@ -246,6 +247,9 @@ h2 {
     /* experience section */
     .exper {
         margin-top: 286px;
+    }
+    .card_content svg {
+        margin-left: 81px;
     }
 }
 
@@ -310,6 +314,12 @@ h2 {
     }
 
 }
+@media  (min-width: 1400px) {
+    /* .services .ui2 {
+        margin-right: 0px;
+        margin-left: 153px;
+    } */
+}
 @media  (min-width: 1200px) {
     .services .head {
         margin-left: -12px;
@@ -319,10 +329,10 @@ h2 {
         width: 339px;
         height: 559px;
     }
-    .services .last {
-        margin-top: 18px;
-        margin-right: -33px;
-    } 
+    .services .ui2 {
+        margin-right: 53px;
+        margin-left: 53px;
+    }
 }
 @media  (min-width: 992px) {
     .card {
@@ -334,7 +344,8 @@ h2 {
         margin-left: auto;
     }
     .card_content a {
-        margin-top: 159px;
+        margin-top: -6px;
+        margin-left: 793px;
     }
     .services .head {
         margin-left: -12px;
@@ -344,11 +355,11 @@ h2 {
         width: 339px;
         height: 559px;
     }
-    .services .last {
-        margin-top: 18px;
-        margin-right: -33px;
-    } 
-}
+    /* .services .ui2 {
+        margin-right: 0px;
+        margin-left: 153px;
+    }
+} */
 
 @media (min-width: 768px) {
     .card {
@@ -360,8 +371,9 @@ h2 {
         margin-left: auto;
     }
     .services .head {
-        margin-left: -12px;
-        width: 339px;
+        height: 103px;
+        width: 315px;
+        margin: 0%;
     }
     .services article {
         width: 339px;
@@ -383,5 +395,5 @@ h2 {
     .services article {
         margin-top: 24px;
     }
-    
+
 }
