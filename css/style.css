@@ -138,15 +138,16 @@ h5 {
     position: relative;
     top: 44px;
 }
-
-.frontback ul li{
+/* .frontback */
+ ul li{
     background-color: transparent;
     text-decoration: none;
     list-style: none;
     color: #000;
     padding: 13px;
 }
-.frontback ul {
+/* .frontback  */
+ul {
     padding-top: 34px;
 }
 .frontback:hover {
@@ -171,12 +172,46 @@ h5 {
     border: none;
 }
 
-.exper h2 {
+h2 {
     color: #ffb72b;
 }
 
 
-/* @media only screen and (min-width: 400px) and( max-width: 600px){} */
+/* services section */
+.services {
+    text-align: center;
+    margin-top: 190px;
+}
+.services article {
+    /* border: solid red 3px; */
+    background-color: #2c2c6c;
+    height: 520px;
+    width: 380px;
+    position: relative;
+    border-radius:10px ;
+}
+.services .head {
+    background: #ffb72b;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0,0,0,.1);
+    padding: 2rem;
+    height: 100px;
+    width: 360px;
+    position: relative;
+}
+.services article:hover {
+    background-color:#1f1f38;
+    border: solid white 1px;
+    border-radius:10px ;
+}
+.services article li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    /* font-size:5vw; */
+}
+
 
 @media (min-width:567px) and (max-width: 768px) {
     .img {
@@ -275,8 +310,21 @@ h5 {
     }
 
 }
-
-@media screen and (min-width: 992px) {
+@media  (min-width: 1200px) {
+    .services .head {
+        margin-left: -12px;
+        width: 339px;
+    }
+    .services article {
+        width: 339px;
+        height: 559px;
+    }
+    .services .last {
+        margin-top: 18px;
+        margin-right: -33px;
+    } 
+}
+@media  (min-width: 992px) {
     .card {
         flex: 0 0 auto;
         height: 100px;
@@ -288,7 +336,18 @@ h5 {
     .card_content a {
         margin-top: 159px;
     }
-
+    .services .head {
+        margin-left: -12px;
+        width: 339px;
+    }
+    .services article {
+        width: 339px;
+        height: 559px;
+    }
+    .services .last {
+        margin-top: 18px;
+        margin-right: -33px;
+    } 
 }
 
 @media (min-width: 768px) {
@@ -299,6 +358,14 @@ h5 {
         width: 25%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .services .head {
+        margin-left: -12px;
+        width: 339px;
+    }
+    .services article {
+        width: 339px;
+        height: 559px;
     }
 
 }
@@ -312,6 +379,9 @@ h5 {
             margin-right: auto;
             margin-left: auto;
       
+    }
+    .services article {
+        margin-top: 24px;
     }
     
 }
