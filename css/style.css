@@ -358,8 +358,8 @@ h2 {
     /* .services .ui2 {
         margin-right: 0px;
         margin-left: 153px;
-    }
-} */
+    /* } */
+} 
 
 @media (min-width: 768px) {
     .card {
@@ -395,5 +395,4 @@ h2 {
     .services article {
         margin-top: 24px;
     }
-
 }
