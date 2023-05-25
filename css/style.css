@@ -104,7 +104,8 @@ h5 {
     background-color: #ffb72b;
     border-radius: 10px;
 }
-.card:hover{
+
+.card:hover {
     background-color: #1f1f38;
     border: solid 1px white;
 }
@@ -130,6 +131,7 @@ h5 {
     margin-top: 12rem;
     text-align: center;
 }
+
 .experience-sec .frontback {
 
     background-color: #ffb72b;
@@ -137,31 +139,47 @@ h5 {
     height: 369.66px;
     width: 560px;
     position: relative;
-    top: 44px;
+    /* top: -24px; */
 }
+
+.exper small {
+    color: #ffffff99;
+    margin-top: 8px;
+}
+
 /* .frontback */
- ul li{
+ul li {
     background-color: transparent;
     text-decoration: none;
     list-style: none;
     color: #000;
     padding: 13px;
 }
+
 /* .frontback  */
 ul {
     padding-top: 34px;
 }
+
 .frontback:hover {
     background-color: #1f1f38;
     color: #000;
     border: solid 1px white;
 }
+
+.frontback h3 {
+    color: #000;
+    margin-top: 10px;
+}
+
 .frontback .box {
     position: absolute;
     /* justify-self: center; */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 530px;
+    padding-top: 10px;
 }
 
 .experience-sec article {
@@ -183,28 +201,38 @@ h2 {
     text-align: center;
     margin-top: 190px;
 }
+
+.services small {
+    color: #ffffff99;
+}
+
 .services article {
     /* border: solid red 3px; */
     background-color: #2c2c6c;
     height: 520px;
     width: 380px;
     position: relative;
-    border-radius:10px ;
+    border-radius: 10px;
 }
+
 .services .head {
     background: #ffb72b;
-    border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0,0,0,.1);
+    /* border-radius: 0 0 2rem 2rem; */
+    border-radius: 0 0 95rem 95rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, .1);
     padding: 2rem;
     /* height: 100px;
     width: 360px; */
     position: relative;
 }
+
 .services article:hover {
-    background-color:#1f1f38;
+    background-color: #1f1f38;
     border: solid white 1px;
-    border-radius:10px ;
+    border-radius: 10px;
+    border: solid 3px #7272dc;
 }
+
 .services article li {
     display: flex;
     gap: 1rem;
@@ -228,9 +256,9 @@ h2 {
     }
 
     .card {
-        width: 33.333%;
+        /* width: 30%; */
 
-        margin-bottom: 20px;
+        
     }
 
     .para {
@@ -240,17 +268,16 @@ h2 {
     }
 
     .card_content a {
-        position: absolute;
-        top: 140px;
+        margin-top: 63px;
+    margin-left: 8px;
     }
 
     /* experience section */
     .exper {
         margin-top: 286px;
     }
-    .card_content svg {
-        margin-left: 81px;
-    }
+
+    
 }
 
 @media (min-width:769px) and (max-width: 1024px) {
@@ -262,14 +289,14 @@ h2 {
     }
 
     /* About me */
-    .card_content {
+    /* .card_content {
 
         margin-top: 10px;
-    }
+    } */
 
-    .card_content a {
+    /* .card_content a {
         margin-top: 9px;
-    }
+    } */
 
     .card {
         /* width: 33.333%; */
@@ -292,9 +319,11 @@ h2 {
     }
 
     .card {
-        width: 33.333%;
-        display: block;
-        margin-bottom: 20px;
+        width: 30%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 2%;
+    margin-left: 10px;
     }
 
     .para {
@@ -303,10 +332,7 @@ h2 {
         text-align: center;
     }
 
-    .card_content a {
-        position: absolute;
-        top: 110px;
-    }
+    
 
     /* experience section */
     .exper {
@@ -314,85 +340,158 @@ h2 {
     }
 
 }
-@media  (min-width: 1400px) {
+
+@media (min-width: 1400px) {
     /* .services .ui2 {
         margin-right: 0px;
         margin-left: 153px;
     } */
 }
-@media  (min-width: 1200px) {
+
+@media (min-width: 1200px) {
     .services .head {
         margin-left: -12px;
         width: 339px;
     }
+
     .services article {
         width: 339px;
         height: 559px;
     }
+
     .services .ui2 {
         margin-right: 53px;
         margin-left: 53px;
     }
+    .card_content a {
+        position: absolute;
+        margin-left: 51px;
+        top: 74px;
+    }
 }
-@media  (min-width: 992px) {
+
+@media (max-width: 992px) {
     .card {
         flex: 0 0 auto;
-        height: 100px;
-        width: 300px;
-        /* width: 25%; */
+        height: 129px;
+        /* width: 300px; */
+        width: 30%;
         margin-right: auto;
         margin-left: auto;
+        padding: 22px;
     }
+
     .card_content a {
         margin-top: -6px;
-        margin-left: 793px;
+        margin-left: -4px;
     }
+
     .services .head {
         margin-left: -12px;
         width: 339px;
     }
+
     .services article {
         width: 339px;
         height: 559px;
     }
+
     /* .services .ui2 {
         margin-right: 0px;
         margin-left: 153px;
     /* } */
-} 
+}
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .card {
-        flex: 0 0 auto;
-        height: 100px;
-        /* width: 300px; */
-        width: 25%;
-        margin-right: auto;
-        margin-left: auto;
+        width: 30%;
+        margin: 1%;
+        margin-top: 40px;
     }
+    
+    
+
     .services .head {
         height: 103px;
         width: 315px;
         margin: 0%;
     }
+
     .services article {
         width: 339px;
         height: 559px;
     }
-
+    .services .ui2 {
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+    .card_content svg {
+        margin-left: 59px;
+    }
+    .card_content a {
+        margin-top: 135px;
+    margin-left: 8px;
+}
+    
+    
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .card {
-            flex: 0 0 auto;
-            height: 135px;
-            /* width: 300px; */
-            width: 30%;
-            margin-right: auto;
-            margin-left: auto;
-      
+        flex: 0 0 auto;
+        height: 135px;
+        /* width: 300px; */
+        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
     }
+    .card_content svg {
+        margin-left: 59px;
+    }
+
     .services article {
         margin-top: 24px;
+    }
+    .services .ui2 {
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+    .card_content a {
+        position: absolute;
+        top: 194px;
+        margin-left: 4px;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .experience-sec article {
+
+        /* max-height: 100%; */
+    }
+
+    .card {
+        width: 235px;
+    }
+
+    .card svg {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .card_content .para {
+        margin-top: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card_content a {
+        position: absolute;
+        margin-left: 31px;
+        top: 299%;
+    }
+    .services .ui2 {
+        margin-top: 26px;
+        margin-bottom: 26px;
     }
 }
