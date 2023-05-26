@@ -172,7 +172,7 @@ ul {
     margin-top: 10px;
 }
 
-.frontback .box {
+.frontback .list-group-item {
     position: absolute;
     /* justify-self: center; */
     left: 50%;
@@ -239,70 +239,6 @@ h2 {
     margin-bottom: 0.8rem;
     margin-top: 0.8rem;
     /* font-size:5vw; */
-}
-
-
-@media (min-width:567px) and (max-width: 768px) {
-    .img {
-        width: 452px;
-        height: 443px;
-        border-top-left-radius: 540px;
-        border-top-right-radius: 540px;
-    }
-
-    /* About me */
-    .card_content {
-        position: relative;
-    }
-
-    .card {
-        /* width: 30%; */
-
-        
-    }
-
-    .para {
-        position: absolute;
-        top: 179px;
-        text-align: center;
-    }
-
-    .card_content a {
-        margin-top: 63px;
-    margin-left: 8px;
-    }
-
-    /* experience section */
-    .exper {
-        margin-top: 286px;
-    }
-
-    
-}
-
-@media (min-width:769px) and (max-width: 1024px) {
-    .img {
-        width: 452px;
-        height: 443px;
-        border-top-left-radius: 540px;
-        border-top-right-radius: 540px;
-    }
-
-    /* About me */
-    /* .card_content {
-
-        margin-top: 10px;
-    } */
-
-    /* .card_content a {
-        margin-top: 9px;
-    } */
-
-    .card {
-        /* width: 33.333%; */
-        display: block;
-        margin-bottom: 5px;
-    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -437,6 +373,20 @@ h2 {
 }
 
 @media (max-width: 576px) {
+    .card_content {
+        position: relative;
+    }
+    .img {
+        width: 452px;
+        height: 443px;
+        border-top-left-radius: 540px;
+        border-top-right-radius: 540px;
+    }
+    .para {
+        position: absolute;
+        top: 177px;
+        text-align: left;
+    }
     .card {
         flex: 0 0 auto;
         height: 135px;
@@ -461,17 +411,33 @@ h2 {
         top: 194px;
         margin-left: 4px;
     }
-    
+    .exper {
+        margin-top: 286px;
+    }
 }
 
 @media (max-width:320px) {
+    .img {
+        width: 352px;
+        height: 450px;
+        border-top-left-radius: 500px;
+        border-top-right-radius: 500px;
+    }
+    .card_content .para {
+        margin-top: 369px;
+        margin-left: 33px;
+        margin-right: 33px;
+    
+    }
+    
+    
     .experience-sec article {
 
         /* max-height: 100%; */
     }
 
     .card {
-        width: 235px;
+        width: 270px;
     }
 
     .card svg {
@@ -480,15 +446,23 @@ h2 {
     }
 
     .card_content .para {
-        margin-top: 26px;
+        margin-top: 357px;
         margin-left: 20px;
         margin-right: 20px;
+    
     }
 
     .card_content a {
         position: absolute;
-        margin-left: 31px;
-        top: 299%;
+        margin-left: 13px;
+        top: 698px;
+    }
+    
+    .card_content ul li {
+        padding: 0%;
+    }
+    .card_content ul {
+        margin: auto;
     }
     .services .ui2 {
         margin-top: 26px;
